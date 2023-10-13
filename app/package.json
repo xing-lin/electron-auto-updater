@@ -1,0 +1,34 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "main": "main.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "electron-builder",
+    "watch": "nodemon --exec electron .",
+    "start": "electron ."
+  },
+  "repository": "https://github.com/xing-lin/electron-auto-updater",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
+  "build": {
+    "appId": "com.linxing.autoupdater",
+    "productName": "Auto Updater App",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-builder": "^24.6.4",
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "electron-updater": "^6.1.4"
+  }
+}
