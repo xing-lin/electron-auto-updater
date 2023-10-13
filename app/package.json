@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "main.js",
   "license": "MIT",
   "scripts": {
@@ -15,7 +15,7 @@
   },
   "build": {
     "appId": "com.linxing.autoupdater",
-    "productName": "Auto Updater App",
+    "productName": "Auto-Updater-App",
     "win": {
       "target": "nsis"
     },
